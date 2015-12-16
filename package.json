@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "dependencies": {
+    "cogs": "1.0.7",
+    "cogs-transformer-babel": "1.0.12",
+    "cogs-transformer-concat-amd": "1.0.6",
+    "cogs-transformer-directives": "1.0.3",
+    "cogs-transformer-sass": "1.0.4",
+    "cogs-transformer-csso": "1.0.5",
+    "cogs-transformer-uglify-js": "1.0.3"
+  }
+}
