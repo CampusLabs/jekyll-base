@@ -1,5 +1,5 @@
 # jekyll-base
-A base image for OrgSync Jekyll/Cogs/Nginx sites.
+A base image for OrgSync Jekyll/~Cogs~/Nginx sites.
 
 ## Example Usage
 
