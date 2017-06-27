@@ -1,5 +1,7 @@
 FROM alpine
-RUN apk --update add nginx nodejs ruby ruby-bundler ruby-dev ruby-rdoc ruby-irb python build-base libffi-dev zlib-dev && \
-    gem install jekyll jekyll-redirect-from
+COPY ./Gemfile /code/Gemfile
+COPY ./Gemfile.lock /code/Gemfile.lock
+RUN apk --update add nginx nodejs ruby ruby-bundler ruby-dev ruby-rdoc ruby-irb python build-base libffi-dev zlib-dev
 WORKDIR /code
+RUN bundle install
 CMD ["nginx"]
